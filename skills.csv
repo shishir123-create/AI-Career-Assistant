@@ -1,0 +1,69 @@
+﻿Skill,Category
+python,programming
+java,programming
+c++,programming
+c,programming
+javascript,programming
+typescript,programming
+go,programming
+ruby,programming
+,
+html,web
+css,web
+react,web
+angular,web
+vue,web
+nodejs,web
+express,web
+bootstrap,web
+,
+django,framework
+flask,framework
+spring,framework
+fastapi,framework
+,
+sql,database
+mysql,database
+postgresql,database
+mongodb,database
+firebase,database
+oracle,database
+,
+machine learning,ai
+deep learning,ai
+natural language processing,ai
+computer vision,ai
+data science,ai
+artificial intelligence,ai
+,
+pandas,library
+numpy,library
+matplotlib,library
+seaborn,library
+scikit-learn,library
+tensorflow,library
+keras,library
+pytorch,library
+,
+excel,analytics
+power bi,analytics
+tableau,analytics
+data visualization,analytics
+,
+git,tools
+github,tools
+docker,tools
+kubernetes,tools
+linux,tools
+bash,tools
+,
+rest api,backend
+graphql,backend
+microservices,backend
+,
+problem solving,soft skill
+communication,soft skill
+teamwork,soft skill
+time management,soft skill
+adaptability,soft skill
+critical thinking,soft skill
