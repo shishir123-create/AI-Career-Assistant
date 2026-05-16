@@ -1,0 +1,284 @@
+﻿job_title,skills,description,experience,location
+Software Engineer,Python;Java;SQL,Develop and maintain software applications,2--4 years,Bangalore
+Data Analyst,Excel;SQL;Power BI,Analyze and visualize business data,1-3 years,Hyderabad
+Web Developer,HTML;CSS;JavaScript,Build responsive websites,1-3 years,Chennai
+Project Manager,Agile;Scrum,"Leadership,Manage project timelines and teams",5-8 years,Pune
+HR Executive,Recruitment;Onboarding,Handle hiring and employee relations,2-4 years,Mumbai
+Marketing Manager,SEO;Content Marketing,"Plan and execute marketing strategies,",4-7 years,Delhi
+Accountant,Tally;GST;Excel,Manage financial records and taxation,2-5 years,Kolkata
+Graphic Designer,Photoshop;Illustrator,"Design marketing creatives,",1-3 years,Bangalore
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,2-5 years,Coimbatore
+Civil Engineer,AutoCAD;Site Management,Supervise construction projects,3-6 years,Hyderabad
+Electrical Engineer,Circuit Design;MATLAB,Design electrical systems,2-5 years,Chennai
+Business Analyst,Requirement Analysis;SQL,Bridge business and tech teams,2-4 years,Bangalore
+Content Writer,SEO Writing;Research,Create engaging content,1-3 years,Hyderabad
+UI/UX Designer,Figma;User Research,Design user-friendly interfaces,2-4 years,Pune
+DevOps Engineer,AWS;Docker;CI/CD,Manage deployment pipelines,3-6 years,Bangalore
+Data Scientist,Python;ML;Statistics,Build predictive models,3-6 years,Hyderabad
+Sales Executive,Communication;Negotiation,Drive product sales,1-3 years,Delhi
+Customer Support,CRM;Communication,Handle customer queries,0-2 years,Hyderabad
+Network Engineer,Cisco;Networking,Maintain IT networks,2-5 years,Mumbai
+QA Engineer,Selenium;Manual Testing,Test software quality,2-4 years,Chennai
+Mobile App Developer,"Flutter;Android,",Develop mobile applications,2-5 years,Bangalore
+Cloud Engineer,AWS;Azure,Manage cloud infrastructure,3-6 years,Hyderabad
+Operations Manager,"Process Management;Leadership,",Oversee operations,5-8 years,Pune
+Teacher,Subject Knowledge;Communication,Educate students,1-5 years,Bangalore
+Pharmacist,Medicine Knowledge;Dispensing,Manage pharmacy operations,1-3 years,Mumbai
+Nurse,Patient Care;Medical Skills,"Assist in healthcare services,",1-4 years,Chennai
+Doctor,Diagnosis;Treatment,Provide medical care,3-10 years,Delhi
+Lawyer,"Legal Research;Advocacy,",Handle legal cases,3-8 years,Mumbai
+Architect,AutoCAD;Design,Design building plans,2-6 years,Bangalore
+Interior Designer,SketchUp;Creativity,Design interior spaces,1-4 years,Hyderabad
+Chef,Cooking;Food Safety,Prepare meals,2-5 years,Goa
+Hotel Manager,Hospitality;Management,Manage hotel operations,4-8 years,Jaipur
+Event Manager,Planning;Coordination,Organize events,2-5 years,Delhi
+Digital Marketer,"SEO;Social Media,",Promote online presence,2-4 years,Bangalore
+Financial Analyst,Excel;Finance,Analyze financial data,2-5 years,Mumbai
+Investment Banker,Finance;Modeling,Manage investments,3-7 years,Delhi
+Supply Chain Manager,Logistics;Planning,Manage supply chain,4-8 years,Chennai
+Logistics Coordinator,Inventory;Transport,Coordinate shipments,1-3 years,Pune
+Warehouse Manager,Inventory;Operations,Manage warehouse,3-6 years,Hyderabad
+Retail Manager,Sales;Customer Service,Manage retail store,2-5 years,Bangalore
+Store Assistant,Customer Service;Sales,Assist customers,0-2 years,Mumbai
+Receptionist,Communication;MS Office,Handle front desk,0-2 years,Delhi
+Security Guard,Vigilance;Safety,Ensure safety,0-3 years,Chennai
+Driver,Driving;Navigation,Transport goods/people,1-5 years,Bangalore
+Electrician,Electrical Repair;Wiring,Install electrical systems,2-5 years,Hyderabad
+Plumber,Pipe Fitting;Repair,Fix plumbing issues,2-5 years,Chennai
+Carpenter,Woodwork;Tools,Build wooden structures,2-5 years,Pune
+Painter,Painting;Finishing,Paint buildings,1-4 years,Mumbai
+Cleaner,Housekeeping;Hygiene,Maintain cleanliness,0-2 years,Delhi
+Fitness Trainer,Workout Planning;Nutrition,Train clients,1-4 years,Bangalore
+Yoga Instructor,Yoga;Meditation,Teach yoga,1-4 years,Rishikesh
+Photographer,Camera;Editing,Capture photos,1-4 years,Goa
+Videographer,Video Editing;Shooting,Create videos,1-4 years,Mumbai
+Animator,Animation;After Effects,Create animations,2-5 years,Bangalore
+Game Developer,Unity;C#,Develop games,2-5 years,Pune
+Cybersecurity Analyst,"Security;Networking,Security;Networking,",Protect systems,3-6 years,Hyderabad
+AI Engineer,Python;Deep Learning,Build AI systems,3-6 years,Bangalore
+Blockchain Developer,Solidity;Crypto,Develop blockchain apps,2-5 years,Munbai
+Technical Writer,Documentation;Writing,Create manuals,2-4 years,Chennai
+Translator,Language Skills;Writing,Translate documents,1-4 years,Remote
+Social Media Manager,Content;Analytics,Manage social accounts,2-4 years,Delhi
+SEO Specialist,SEO;Analytics,Optimize websites,2-4 years,Bangalore
+HR Manager,Leadership;HR Policies,Manage HR team,5-8 years,Mumbai
+Recruiter,Sourcing;Interviewing,Hire candidates,1-3 years,Pune
+Payroll Executive,Payroll;Compliance,Manage salaries,2-4 years,Hyderabad
+Legal Advisor,Legal Knowledge;Drafting,Advise clients,4-7 years,Delhi
+"Auditor,",Audit;Finance,Review financial records,3-6 years,Mumbai
+Bank Clerk,Accounts;Customer Service,Assist banking operations,0-2 years,Chennai
+Bank Manager,Leadership;Finance,Manage branch,5-10 years,Bangalore
+Insurance Agent,Sales;Policy Knowledge,Sell insurance,1-4 years,Hyderabad
+Real Estate Agent,Sales;Negotiation,Deal property sales,1-5 years,Delhi
+Pilot,Flying;Navigation,Operate aircraft,5-10 years,Mumbai
+Air Hostess,Customer Service;Safety,Assist passengers,1-4 years,Delhi
+Railway Staff,Operations;Safety,Manage railway tasks,1-4 years,Chennai
+Government Officer,Administration;Policy,Handle public services,3-10 years,Delhi
+Police Officer,Law Enforcement;Fitness,Maintain law and order,2-6 years,Mumbai
+Firefighter,Emergency Response;Safety,Handle fire emergencies,1-5 years,Delhi
+Army Personnel,Defense;Discipline,Serve in armed forces,2-10 years,Varnasi
+Scientist,Research;Analysis,Conduct research,4-10 years,Bangalore
+Lab Technician,Lab Skills;Testing,Assist lab operations,1-4 years,Hyderabad
+Research Assistant,Data Collection;Analysis,Support research,1-3 years,Delhi
+Professor,Teaching;Research,Educate students,5-12 years,Bangalore
+School Principal,Leadership;Administration,Manage school,8-15 years,Mumbai
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Bangalore
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Hyderabad
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Chennai
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Mumbai
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Delhi
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Pune
+Accountant,Tally;GST,Manage accounts,1-3 years,Kolkata
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Remote
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Bangalore
+Civil Engineer,Site Management,Supervise construction,5-8 years,Hyderabad
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Chennai
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Mumbai
+Content Writer,SEO Writing;Research,Write content,2-4 years,Delhi
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Pune
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Kolkata
+Data Scientist,ML;Statistics,Build models,0-2 years,Remote
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Bangalore
+Customer Support,CRM;Support,Support customers,2-4 years,Hyderabad
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Chennai
+QA Engineer,Testing;Selenium,Test software,5-8 years,Mumbai
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Delhi
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Pune
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Kolkata
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Remote
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Bangalore
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Hyderabad
+Accountant,Tally;GST,Manage accounts,1-3 years,Chennai
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Mumbai
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Delhi
+Civil Engineer,Site Management,Supervise construction,5-8 years,Pune
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Kolkata
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Remote
+Content Writer,SEO Writing;Research,Write content,2-4 years,Bangalore
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Hyderabad
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Chennai
+Data Scientist,ML;Statistics,Build models,0-2 years,Mumbai
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Delhi
+Customer Support,CRM;Support,Support customers,2-4 years,Pune
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Kolkata
+QA Engineer,Testing;Selenium,Test software,5-8 years,Remote
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Bangalore
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Hyderabad
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Chennai
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Mumbai
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Delhi
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Pune
+Accountant,Tally;GST,Manage accounts,1-3 years,Kolkata
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Remote
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Bangalore
+Civil Engineer,Site Management,Supervise construction,5-8 years,Hyderabad
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Chennai
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Mumbai
+Content Writer,SEO Writing;Research,Write content,2-4 years,Delhi
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Pune
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Kolkata
+Data Scientist,ML;Statistics,Build models,0-2 years,Remote
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Bangalore
+Customer Support,CRM;Support,Support customers,2-4 years,Hyderabad
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Chennai
+QA Engineer,Testing;Selenium,Test software,5-8 years,Mumbai
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Delhi
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Pune
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Kolkata
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Remote
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Bangalore
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Hyderabad
+Accountant,Tally;GST,Manage accounts,1-3 years,Chennai
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Mumbai
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Delhi
+Civil Engineer,Site Management,Supervise construction,5-8 years,Pune
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Kolkata
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Remote
+Content Writer,SEO Writing;Research,Write content,2-4 years,Bangalore
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Hyderabad
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Chennai
+Data Scientist,ML;Statistics,Build models,0-2 years,Mumbai
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Delhi
+Customer Support,CRM;Support,Support customers,2-4 years,Pune
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Kolkata
+QA Engineer,Testing;Selenium,Test software,5-8 years,Remote
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Bangalore
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Hyderabad
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Chennai
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Mumbai
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Delhi
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Pune
+Accountant,Tally;GST,Manage accounts,1-3 years,Kolkata
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Remote
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Bangalore
+Civil Engineer,Site Management,Supervise construction,5-8 years,Hyderabad
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Chennai
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Mumbai
+Content Writer,SEO Writing;Research,Write content,2-4 years,Delhi
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Pune
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Kolkata
+Data Scientist,ML;Statistics,Build models,0-2 years,Remote
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Bangalore
+Customer Support,CRM;Support,Support customers,2-4 years,Hyderabad
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Chennai
+QA Engineer,Testing;Selenium,Test software,5-8 years,Mumbai
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Delhi
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Pune
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Kolkata
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Remote
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Bangalore
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Hyderabad
+Accountant,Tally;GST,Manage accounts,1-3 years,Chennai
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Mumbai
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Delhi
+Civil Engineer,Site Management,Supervise construction,5-8 years,Pune
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Kolkata
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Remote
+Content Writer,SEO Writing;Research,Write content,2-4 years,Bangalore
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Hyderabad
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Chennai
+Data Scientist,ML;Statistics,Build models,0-2 years,Mumbai
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Delhi
+Customer Support,CRM;Support,Support customers,2-4 years,Pune
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Kolkata
+QA Engineer,Testing;Selenium,Test software,5-8 years,Remote
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Bangalore
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Hyderabad
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Chennai
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Mumbai
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Delhi
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Pune
+Accountant,Tally;GST,Manage accounts,1-3 years,Kolkata
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Remote
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Bangalore
+Civil Engineer,Site Management,Supervise construction,5-8 years,Hyderabad
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Chennai
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Mumbai
+Content Writer,SEO Writing;Research,Write content,2-4 years,Delhi
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Pune
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Kolkata
+Data Scientist,ML;Statistics,Build models,0-2 years,Remote
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Bangalore
+Customer Support,CRM;Support,Support customers,2-4 years,Hyderabad
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Chennai
+QA Engineer,Testing;Selenium,Test software,5-8 years,Mumbai
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Delhi
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Pune
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Kolkata
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Remote
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Bangalore
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Hyderabad
+Accountant,Tally;GST,Manage accounts,1-3 years,Chennai
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Mumbai
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Delhi
+Civil Engineer,Site Management,Supervise construction,5-8 years,Pune
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Kolkata
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Remote
+Content Writer,SEO Writing;Research,Write content,2-4 years,Bangalore
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Hyderabad
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Chennai
+Data Scientist,ML;Statistics,Build models,0-2 years,Mumbai
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Delhi
+Customer Support,CRM;Support,Support customers,2-4 years,Pune
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Kolkata
+QA Engineer,Testing;Selenium,Test software,5-8 years,Remote
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Bangalore
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Hyderabad
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Chennai
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Mumbai
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Delhi
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Pune
+Accountant,Tally;GST,Manage accounts,1-3 years,Kolkata
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Remote
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Bangalore
+Civil Engineer,Site Management,Supervise construction,5-8 years,Hyderabad
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Chennai
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Mumbai
+Content Writer,SEO Writing;Research,Write content,2-4 years,Delhi
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Pune
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Kolkata
+Data Scientist,ML;Statistics,Build models,0-2 years,Remote
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Bangalore
+Customer Support,CRM;Support,Support customers,2-4 years,Hyderabad
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Chennai
+QA Engineer,Testing;Selenium,Test software,5-8 years,Mumbai
+Software Engineer,Python;SQL,Develop and maintain systems,0-2 years,Delhi
+Data Analyst,Excel;Power BI,Analyze business data,1-3 years,Pune
+Web Developer,HTML;CSS;JS,Build web applications,2-4 years,Kolkata
+Project Manager,Agile;Scrum,Manage teams and projects,3-5 years,Remote
+HR Executive,Recruitment;Onboarding,Handle HR processes,5-8 years,Bangalore
+Marketing Manager,SEO;Marketing,Plan marketing campaigns,0-2 years,Hyderabad
+Accountant,Tally;GST,Manage accounts,1-3 years,Chennai
+Graphic Designer,Photoshop;Illustrator,Design visuals,2-4 years,Mumbai
+Mechanical Engineer,AutoCAD;SolidWorks,Design mechanical systems,3-5 years,Delhi
+Civil Engineer,Site Management,Supervise construction,5-8 years,Pune
+Electrical Engineer,Circuit Design;MATLAB,Design circuits,0-2 years,Kolkata
+Business Analyst,SQL;Documentation,Analyze requirements,1-3 years,Remote
+Content Writer,SEO Writing;Research,Write content,2-4 years,Bangalore
+UI/UX Designer,Figma;Prototyping,Design UI,3-5 years,Hyderabad
+DevOps Engineer,AWS;Docker,Manage deployments,5-8 years,Chennai
+Data Scientist,ML;Statistics,Build models,0-2 years,Mumbai
+Sales Executive,Communication;Sales,Drive sales,1-3 years,Delhi
+Customer Support,CRM;Support,Support customers,2-4 years,Pune
+Network Engineer,Cisco;Networking,Maintain networks,3-5 years,Kolkata
+QA Engineer,Testing;Selenium,Test software,5-8 years,Remote
