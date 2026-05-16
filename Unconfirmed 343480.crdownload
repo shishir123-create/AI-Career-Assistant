@@ -1,0 +1,333 @@
+import os
+import re
+import streamlit as st
+import pandas as pd
+import numpy as np
+import PyPDF2
+import plotly.express as px
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+# =========================
+# CONFIG
+# =========================
+st.set_page_config(page_title="AI Career Assistant Pro", layout="wide")
+
+# =========================
+# 🎨 PREMIUM DARK UI
+# =========================
+st.markdown("""
+<style>
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #020617, #0f172a);
+    color: white;
+}
+[data-testid="stSidebar"] * {
+    color: #e5e7eb !important;
+}
+
+/* Inputs fix */
+input, textarea, select {
+    color: black !important;
+}
+
+/* Cards */
+.card {
+    background: linear-gradient(135deg,#1e3a8a,#2563eb);
+    padding:18px;
+    border-radius:14px;
+    color:white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Buttons */
+.stButton>button {
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Divider */
+hr {
+    margin: 14px 0 10px 0;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# =========================
+# DATA LOADER (FIXED PATH)
+# =========================
+@st.cache_data
+def load_jobs():
+    # try both possible paths
+    p1 = os.path.join(os.getcwd(), "data", "jobs.csv")
+    p2 = os.path.join(os.getcwd(), "jobs.csv")
+
+    path = p1 if os.path.exists(p1) else p2
+    if not os.path.exists(path):
+        st.error("❌ jobs.csv not found. Put it inside /data/ folder")
+        return pd.DataFrame(columns=["job_title","skills","description","experience","location"])
+
+    df = pd.read_csv(path)
+    df.columns = df.columns.str.lower()
+    df.fillna("", inplace=True)
+    return df
+
+jobs_df = load_jobs()
+
+# =========================
+# UTIL FUNCTIONS
+# =========================
+def extract_text(file):
+    try:
+        reader = PyPDF2.PdfReader(file)
+        text = ""
+        for p in reader.pages:
+            text += (p.extract_text() or "")
+        return text.lower()
+    except Exception:
+        return ""
+
+def extract_skills(text):
+    skills_master = [
+        "python","sql","machine learning","deep learning",
+        "excel","data analysis","pandas","numpy","scikit-learn",
+        "tensorflow","nlp","power bi","tableau"
+    ]
+    return [s for s in skills_master if s in text]
+
+def match_jobs(text, df):
+    if df.empty:
+        return df
+
+    df = df.copy()
+    df["combined"] = df["job_title"] + " " + df["skills"] + " " + df["description"]
+
+    vec = TfidfVectorizer(stop_words="english")
+    X = vec.fit_transform(df["combined"].tolist() + [text])
+
+    scores = cosine_similarity(X[-1], X[:-1])[0]
+    df["score"] = scores
+
+    return df.sort_values("score", ascending=False)
+
+def apply_filters(df, location, role):
+    if location != "All":
+        df = df[df["location"].str.contains(location, case=False)]
+    if role != "All":
+        df = df[df["job_title"].str.contains(role, case=False)]
+    return df
+
+def linkedin_url(title):
+    q = re.sub(r"\s+", "%20", title.strip())
+    return f"https://www.linkedin.com/jobs/search/?keywords={q}"
+
+# =========================
+# SESSION STATE
+# =========================
+if "page" not in st.session_state:
+    st.session_state.page = "Home"
+
+if "saved_jobs" not in st.session_state:
+    st.session_state.saved_jobs = []
+
+if "resume_text" not in st.session_state:
+    st.session_state.resume_text = ""
+
+if "resume_skills" not in st.session_state:
+    st.session_state.resume_skills = []
+
+# =========================
+# SIDEBAR NAV + FILTERS
+# =========================
+st.sidebar.title("🤖 AI Career Assistant")
+
+nav_home = st.sidebar.button("🏠 Home", use_container_width=True)
+nav_dash = st.sidebar.button("📊 Dashboard", use_container_width=True)
+nav_search = st.sidebar.button("🔍 Job Search", use_container_width=True)
+nav_analyzer = st.sidebar.button("📄 Resume Analyzer", use_container_width=True)
+
+if nav_home:
+    st.session_state.page = "Home"
+if nav_dash:
+    st.session_state.page = "Dashboard"
+if nav_search:
+    st.session_state.page = "Job Search"
+if nav_analyzer:
+    st.session_state.page = "Resume Analyzer"
+
+st.sidebar.markdown("### Filters")
+
+locations = ["All"] + sorted(list(set(jobs_df["location"].tolist()))) if not jobs_df.empty else ["All"]
+roles = ["All"] + sorted(list(set(jobs_df["job_title"].tolist()))) if not jobs_df.empty else ["All"]
+
+location = st.sidebar.selectbox("Location", locations)
+role = st.sidebar.selectbox("Job Role", roles)
+
+apply_filters_btn = st.sidebar.button("Apply Filters", use_container_width=True)
+
+st.sidebar.markdown("### 💾 Saved Jobs")
+if len(st.session_state.saved_jobs) == 0:
+    st.sidebar.caption("No saved jobs yet")
+else:
+    for j in st.session_state.saved_jobs:
+        st.sidebar.write("• " + j)
+
+# =========================
+# HOME
+# =========================
+if st.session_state.page == "Home":
+
+    st.markdown("<h1 style='text-align:center;'>🤖 AI Career Assistant Pro</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center;'>Analyze your resume and get smart job recommendations</p>", unsafe_allow_html=True)
+
+    if st.button("🚀 Start"):
+        st.session_state.page = "Dashboard"
+        st.rerun()
+
+# =========================
+# DASHBOARD
+# =========================
+elif st.session_state.page == "Dashboard":
+
+    st.title("📊 Dashboard")
+
+    uploaded = st.file_uploader("Upload Resume PDF", type=["pdf"])
+
+    analyze_clicked = st.button("Analyze Resume")
+
+    if uploaded and analyze_clicked:
+        text = extract_text(uploaded)
+        st.session_state.resume_text = text
+        st.session_state.resume_skills = extract_skills(text)
+
+    # If no resume yet
+    if not st.session_state.resume_text:
+        st.info("Upload your resume and click Analyze to see insights.")
+        st.stop()
+
+    text = st.session_state.resume_text
+    skills = st.session_state.resume_skills
+
+    df = match_jobs(text, jobs_df)
+
+    if apply_filters_btn:
+        df = apply_filters(df, location, role)
+
+    # fallback if empty
+    if df.empty:
+        st.warning("No jobs match filters → showing all jobs")
+        df = match_jobs(text, jobs_df)
+
+    top = df.head(5)
+    top_score = int(top.iloc[0]["score"] * 100) if not top.empty else 0
+
+    # CARDS
+    c1, c2, c3, c4 = st.columns(4)
+    c1.markdown(f'<div class="card">Skills Found<br><b>{len(skills)}</b></div>', unsafe_allow_html=True)
+    c2.markdown(f'<div class="card">Top Match<br><b>{top_score}%</b></div>', unsafe_allow_html=True)
+    c3.markdown(f'<div class="card">Jobs<br><b>{len(top)}</b></div>', unsafe_allow_html=True)
+    c4.markdown(f'<div class="card">Score<br><b>{top_score}/100</b></div>', unsafe_allow_html=True)
+
+    st.markdown("<hr/>", unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2)
+
+    # SKILLS + TEXT
+    with col1:
+        st.subheader("Extracted Skills")
+        for s in skills:
+            st.success(s)
+
+        st.subheader("Extracted Text")
+        st.text_area("", text[:3000], height=200)
+
+    # JOBS
+    with col2:
+        st.subheader("Recommended Jobs")
+
+        if top.empty:
+            st.warning("No jobs found")
+        else:
+            for i, (_, row) in enumerate(top.iterrows()):
+                score_pct = round(row["score"] * 100, 2)
+                st.write(f"**{row['job_title']}** — {score_pct}%")
+                st.markdown(f"[👉 Apply Now]({linkedin_url(row['job_title'])})")
+
+                # FIX: UNIQUE KEY
+                if st.button("💾 Save Job", key=f"save_{i}"):
+                    if row["job_title"] not in st.session_state.saved_jobs:
+                        st.session_state.saved_jobs.append(row["job_title"])
+
+                # AI explanation
+                matched = [s for s in skills if s in row["skills"].lower()]
+                missing = list(set(row["skills"].lower().split(";")) - set(skills))
+
+                st.caption(f"Matched: {matched}")
+                st.caption(f"Missing: {missing[:3]}")
+
+                st.markdown("---")
+
+    # DONUT (Plotly → no matplotlib error)
+    st.subheader("Skill Match")
+    fig = px.pie(
+        names=["Matched", "Missing"],
+        values=[top_score, 100 - top_score],
+        hole=0.6
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+    # RADAR
+    st.subheader("Resume Score Breakdown")
+    radar = pd.DataFrame({
+        "Category": ["Skills","Experience","Projects","Education"],
+        "Score": [top_score, 80, 75, 85]
+    })
+
+    fig2 = px.line_polar(radar, r="Score", theta="Category", line_close=True)
+    st.plotly_chart(fig2, use_container_width=True)
+
+# =========================
+# JOB SEARCH
+# =========================
+elif st.session_state.page == "Job Search":
+
+    st.title("🔍 Job Search")
+
+    query = st.text_input("Enter job title")
+
+    if st.button("Search"):
+        res = jobs_df[jobs_df["job_title"].str.contains(query, case=False)]
+
+        if res.empty:
+            st.error("No jobs found")
+        else:
+            for _, row in res.head(10).iterrows():
+                st.write(f"{row['job_title']} — {row['location']}")
+                st.markdown(f"[👉 Apply Now]({linkedin_url(row['job_title'])})")
+
+# =========================
+# RESUME ANALYZER
+# =========================
+elif st.session_state.page == "Resume Analyzer":
+
+    st.title("📄 Resume Analyzer")
+
+    file = st.file_uploader("Upload Resume PDF", type=["pdf"])
+
+    if file:
+        text = extract_text(file)
+        skills = extract_skills(text)
+
+        st.subheader("Extracted Text")
+        st.text_area("", text[:3000], height=250)
+
+        st.subheader("Skills Found")
+        for s in skills:
+            st.success(s)
